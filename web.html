@@ -6,6 +6,31 @@
     <title>9 PILAR HASHIRA DI KIMETSU NO YAIBA</title>
 </head>
 <body>
+    <style>
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+            }
+            
+            li {
+        float: left;
+            }
+            
+            li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+            }
+            
+            li a:hover {
+        background-color: #686868;
+            }
+            </style>
 <style>
     img{
         width: 50%;
@@ -22,7 +47,7 @@
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-image: url('https://t4.ftcdn.net/jpg/02/11/04/63/240_F_211046351_i2pUf43wDI9mGKM3XnGOXbAYjOtM0fXY.jpg'); /* Replace with the path to your batik image */
+        background-image: url('https://t4.ftcdn.net/jpg/02/11/04/63/240_F_211046351_i2pUf43wDI9mGKM3XnGOXbAYjOtM0fXY.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -76,20 +101,33 @@
         .scroll {
             scroll-behavior: smooth;
         }
+        .contact-text{
+            font-size: 14px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
     </style>
 
 
 <center>  
 </body>
 <div class="content">
-    <h1>9 Hashira Terkuat di Kimetsu No Yaiba</h1>
-    <p>Silahkan disimak ya..!!</p>
+    
     </div>
     <div class="overlay">
         <div class="container" id="slide1">
+            <ul>
+                <li><a class="active" href="web.html">9 Hashira</a></li>
+                <li><a href="halaman2.html">9 Iblis</a></li>
+                <li><a href="#hubungi">Hubungi Saya</a></li>
+                </ul>
+                <h1>9 Hashira Terkuat di Kimetsu No Yaiba</h1>
+    <p>Silahkan disimak ya..!!</p>
             <div class="biodata">
-                
     <h1 id="0">Nama Karakter :</h1>
+    <hr>
+    <div class="contact-text">
     <p><a href="#2">Gyomei Himejima</a></p>
     <p><a href="#3">Giyuu Tomioka</a></p>
     <p><a href="#4">Sanemi Shinazugawa</a></p>
@@ -99,6 +137,7 @@
     <p><a href="#8">Mitsuri Kanroji</a></p>
     <p><a href="#9">Shinobu Kocho</a></p>
     <p><a href="#10">Obanai Iguro</a></p>
+</div>
     <hr>
 <h1 id="2">1. Gyomei Himejima</h1>
 <img src="https://depor.com/resizer/udL53yjbP_2Zp6-IQboK5aAIJ6k=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/DGN27CIMJJBURBD3FZ3XOSFZW4.jpg" width="50%" height="50%" alt="img" />
@@ -182,6 +221,14 @@
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+    .comment-secc {
+        width: 30;
+        height: 30;
+        background-color: white;
+        padding: 30;
+        border-radius: 30;
+        box-shadow: 0 0 30 rgba(0, 0, 0, 0.1);
+    }
     .input-box {
         width: 90%;
         padding: 10px;
@@ -217,14 +264,30 @@
         font-weight: bold;
         margin-bottom: 5px;
     }
+    .contact-item{
+        align-items: center;
+        display: flex;
+        width: 70px;
+        height: 70px;
+        justify-content: center;
+    }
+    .contact-item img{
+        margin: 40px;
+    }
 </style>
 </head>
 <body>
+    
     <div class="comment-section">
-        <h2>Hubungi Saya</h2>
-        <p><h4> Facebook : <a href="https://www.facebook.com/profile.php?id=100094096385871&locale=id_ID" target= "_blank" >Muhamad Luthfi</a></h4></p>
-        <h4>Instagram : <a href="https://www.instagram.com/appleluffy_?igsh=cXN2NXR4a3E4Mndk" target= "_blank" >@appleluffy_</a></h4>
-        <h4>Email : <a href="muhamadsutipi@gmail.com" target= "_blank" >muhamadsutipi@gmail.com</a></h4>
+        <center>
+        <h2 id="hubungi">Hubungi Saya</h2> 
+        <div class="contact-item">
+        <a href="https://www.instagram.com/appleluffy_?igsh=cXN2NXR4a3E4Mndk" target="_blank"><img src="https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100094096385871&locale=id_ID" target="_blank"><img src="https://thumbs.dreamstime.com/b/facebook-logo-transparent-white-background-web-use-printing-purpose-facebook-logo-web-print-264747671.jpg" alt="Facebook Logo"></a>
+        <a href="https://www.youtube.com/@muhamadsutipi6447" target="_blank"><img src="https://cdn.pixabay.com/photo/2021/09/11/18/21/youtube-6616310_1280.png" alt="Youtube Logo"></a></div>
+    </center>
+
+    <center>
         <h2>Bagian Komentar</h2>
         
         <!-- Input untuk nama -->
@@ -241,7 +304,8 @@
         
         <!-- Bagian untuk menampilkan komentar -->
         <div class="comment-display" id="commentDisplay">
-            <h3>Komentar:</h3>
+            <a href="#0">Kembali...</a>
+        </center>
         </div>
     </div>
 
