@@ -1,0 +1,153 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .comment-section {
+            width: 60%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .comment-secc {
+            width: 30;
+            height: 30;
+            background-color: white;
+            padding: 30;
+            border-radius: 30;
+            box-shadow: 0 0 30 rgba(0, 0, 0, 0.1);
+        }
+        .input-box {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .comment-display {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+        .comment-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .contact-item{
+            align-items: center;
+            display: flex;
+            width: 70px;
+            height: 70px;
+            justify-content: center;
+        }
+        .contact-item img{
+            margin: 30px;
+        }
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://t4.ftcdn.net/jpg/02/11/04/63/240_F_211046351_i2pUf43wDI9mGKM3XnGOXbAYjOtM0fXY.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        scroll-behavior: smooth;
+    }
+    </style>
+    </head>
+    <body>
+        <div class="body">
+        <center>
+            <h2>Bagian Komentar</h2>
+            
+            <!-- Input untuk nama -->
+            <input type="text" id="nameBox" class="input-box" placeholder="Nama Anda...">
+            
+            <!-- Input untuk email -->
+            <input type="email" id="emailBox" class="input-box" placeholder="Email Anda...">
+            
+            <!-- Kotak untuk komentar -->
+            <textarea id="commentBox" class="input-box" placeholder="Tulis komentar Anda..."></textarea>
+            
+            <!-- Tombol untuk kirim komentar -->
+            <button class="submit-btn" onclick="submitComment()">Kirim Komentar</button>
+            
+            <!-- Bagian untuk menampilkan komentar -->
+            <div class="comment-display" id="commentDisplay">
+                <a href="#0">Kembali...</a>
+            </center>
+            </div>
+        </div>
+    
+        <script>
+            function submitComment() {
+                // Ambil nilai dari kotak input
+                var nameBox = document.getElementById('nameBox');
+                var emailBox = document.getElementById('emailBox');
+                var commentBox = document.getElementById('commentBox');
+                var commentDisplay = document.getElementById('commentDisplay');
+    
+                var name = nameBox.value.trim();
+                var email = emailBox.value.trim();
+                var comment = commentBox.value.trim();
+    
+                // Validasi input tidak boleh kosong
+                if (name === "" || email === "" || comment === "") {
+                    alert("Nama, email, dan komentar tidak boleh kosong!");
+                    return;
+                }
+    
+                // Membuat elemen div baru untuk komentar
+                var newComment = document.createElement('div');
+                newComment.classList.add('comment-item');
+    
+                // Membuat elemen untuk nama
+                var commentAuthor = document.createElement('div');
+                commentAuthor.classList.add('comment-author');
+                commentAuthor.textContent = name;
+    
+                // Membuat elemen untuk teks komentar
+                var commentText = document.createElement('div');
+                commentText.textContent = comment;
+    
+                // Menyusun komentar baru
+                newComment.appendChild(commentAuthor);
+                newComment.appendChild(commentText);
+    
+                // Menambahkan komentar ke tampilan komentar
+                commentDisplay.appendChild(newComment);
+    
+                // Mengosongkan kotak input setelah komentar dikirim
+                nameBox.value = "";
+                emailBox.value = "";
+                commentBox.value = "";
+            }
+        </script>
+        </div>
+    </body>
+    </html>

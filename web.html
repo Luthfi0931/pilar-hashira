@@ -118,14 +118,14 @@
     <div class="overlay">
         <div class="container" id="slide1">
             <ul>
-                <li><a class="active" href="web.html">9 Hashira</a></li>
+                <li><a id="0" class="active" href="web.html">9 Hashira</a></li>
                 <li><a href="halaman2.html">9 Iblis</a></li>
                 <li><a href="#hubungi">Hubungi Saya</a></li>
                 </ul>
                 <h1>9 Hashira Terkuat di Kimetsu No Yaiba</h1>
     <p>Silahkan disimak ya..!!</p>
             <div class="biodata">
-    <h1 id="0">Nama Karakter :</h1>
+    <h1>Nama Karakter :</h1>
     <hr>
     <div class="contact-text">
     <p><a href="#2">Gyomei Himejima</a></p>
@@ -272,7 +272,7 @@
         justify-content: center;
     }
     .contact-item img{
-        margin: 40px;
+        margin: 30px;
     }
 </style>
 </head>
@@ -284,75 +284,8 @@
         <div class="contact-item">
         <a href="https://www.instagram.com/appleluffy_?igsh=cXN2NXR4a3E4Mndk" target="_blank"><img src="https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png"></a>
         <a href="https://www.facebook.com/profile.php?id=100094096385871&locale=id_ID" target="_blank"><img src="https://thumbs.dreamstime.com/b/facebook-logo-transparent-white-background-web-use-printing-purpose-facebook-logo-web-print-264747671.jpg" alt="Facebook Logo"></a>
-        <a href="https://www.youtube.com/@muhamadsutipi6447" target="_blank"><img src="https://cdn.pixabay.com/photo/2021/09/11/18/21/youtube-6616310_1280.png" alt="Youtube Logo"></a></div>
+        <a href="https://www.youtube.com/@muhamadsutipi6447" target="_blank"><img src="https://cdn.pixabay.com/photo/2021/09/11/18/21/youtube-6616310_1280.png" alt="Youtube Logo"></a>
+        <a href="https://www.tiktok.com/@uuluthfi?_d=secCgYIASAHKAESPgo8mAss3pUcp45hgaKHDyw9WOdOvGSJxAEm1OiYw6KbUuxjWUHcZ193AfwMSOyuS4PC3P9r1AE5bc1H24jcGgA%3D&checksum=db0ac6358e9243fb721156dd159364eac677c7c95964129f44479e5fd9be292e&lang=id-ID&sec_uid=MS4wLjABAAAAYxWs2TdLVnOHXqBQOdBJKNRRQv6S2lFHcAvAey_kHyPKa-MjPbnbaOGuZK74Rw0K&sec_user_id=MS4wLjABAAAAYxWs2TdLVnOHXqBQOdBJKNRRQv6S2lFHcAvAey_kHyPKa-MjPbnbaOGuZK74Rw0K&share_app_id=1340&share_author_id=7036244642660189210&share_link_id=e223b92a-cfcb-43fc-bdad-c06f3333469f&sharer_language=id&timestamp=1731395190&u_code=dm1gj491gj518a&ugbiz_name=Account&user_id=7036244642660189210&utm_campaign=client_share&utm_source=copy&_r=1" target="_blank"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338429_960_720.png" alt="TikTok Logo"></a></div>
     </center>
-
-    <center>
-        <h2>Bagian Komentar</h2>
-        
-        <!-- Input untuk nama -->
-        <input type="text" id="nameBox" class="input-box" placeholder="Nama Anda...">
-        
-        <!-- Input untuk email -->
-        <input type="email" id="emailBox" class="input-box" placeholder="Email Anda...">
-        
-        <!-- Kotak untuk komentar -->
-        <textarea id="commentBox" class="input-box" placeholder="Tulis komentar Anda..."></textarea>
-        
-        <!-- Tombol untuk kirim komentar -->
-        <button class="submit-btn" onclick="submitComment()">Kirim Komentar</button>
-        
-        <!-- Bagian untuk menampilkan komentar -->
-        <div class="comment-display" id="commentDisplay">
-            <a href="#0">Kembali...</a>
-        </center>
-        </div>
-    </div>
-
-    <script>
-        function submitComment() {
-            // Ambil nilai dari kotak input
-            var nameBox = document.getElementById('nameBox');
-            var emailBox = document.getElementById('emailBox');
-            var commentBox = document.getElementById('commentBox');
-            var commentDisplay = document.getElementById('commentDisplay');
-
-            var name = nameBox.value.trim();
-            var email = emailBox.value.trim();
-            var comment = commentBox.value.trim();
-
-            // Validasi input tidak boleh kosong
-            if (name === "" || email === "" || comment === "") {
-                alert("Nama, email, dan komentar tidak boleh kosong!");
-                return;
-            }
-
-            // Membuat elemen div baru untuk komentar
-            var newComment = document.createElement('div');
-            newComment.classList.add('comment-item');
-
-            // Membuat elemen untuk nama
-            var commentAuthor = document.createElement('div');
-            commentAuthor.classList.add('comment-author');
-            commentAuthor.textContent = name;
-
-            // Membuat elemen untuk teks komentar
-            var commentText = document.createElement('div');
-            commentText.textContent = comment;
-
-            // Menyusun komentar baru
-            newComment.appendChild(commentAuthor);
-            newComment.appendChild(commentText);
-
-            // Menambahkan komentar ke tampilan komentar
-            commentDisplay.appendChild(newComment);
-
-            // Mengosongkan kotak input setelah komentar dikirim
-            nameBox.value = "";
-            emailBox.value = "";
-            commentBox.value = "";
-        }
-    </script>
-</body>
 </body>
 </html>
